@@ -1,0 +1,71 @@
+.pros-cons-container {
+  border: 1px solid #888484;
+  margin: 0;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  padding: 0;
+  box-shadow: 4px 5px 5px;
+  -webkit-box-shadow: 4px 5px 5px;
+  margin-bottom: 10px;
+}
+.pros-cons-container > div {
+  margin: 0;
+  padding: 0;
+}
+
+.pros-cons-container .pros {
+  overflow: hidden;
+}
+.pros-cons-container .cons {
+  background: #EEEEEE;
+}
+
+.pros-cons-container .header {
+  width: 100%;
+  background: #EEEEEE;
+  padding: 5px;
+  box-shadow: 0px 9px 10px #888888;
+  -moz-box-shadow: 0px 9px 10px #888888;
+  -webkit-box-shadow: 0px 9px 10px #888888;
+}
+.pros-cons-container .pros .header {
+  border-right: 1px solid #B2B2B2;
+}
+.pros-cons-container .body {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  clear: both;
+}
+.pros-cons-container .body .ul {
+  float: left;
+  list-style-type: none;
+  padding: 0;
+}
+.pros-cons-container .body .item {
+  float: left;
+  display: block;
+  width: 100%;
+  padding:15px 5px;
+}
+
+.pros-cons-container .footer {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  min-height: 40px;
+}
+.pros-cons-container .footer .text {
+  width: 80%;
+  padding: 5px;
+  float: left;
+}
+.pros-cons-container .footer .add {
+  width: 20%;
+  padding: 5px;
+  float: left;
+}
+.pros-cons-container .footer .add a {
+  color: green;
+  font-size: 30px;
+}

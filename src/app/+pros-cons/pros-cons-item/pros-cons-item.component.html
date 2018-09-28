@@ -1,0 +1,17 @@
+<div
+  class="content"
+  *ngIf="isEditing === false"
+  (click)="isEditing = true"
+>
+  {{name}}
+</div>
+<input
+  class="form-control"
+  *ngIf="isEditing === true"
+  (keyup.enter)="editItem(editName)"
+  [value]="name"
+  #editName
+>
+<div class="remove text-center" (click)="deleteItem()">
+  <span class="glyphicon glyphicon-minus-sign">X</span>
+</div>

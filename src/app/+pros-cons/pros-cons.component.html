@@ -1,0 +1,84 @@
+<!--<div class="pros-cons-container" *ngIf="prosCons">
+  <div class="pros">
+    <input #pros (keyup.enter)="addNewPros(pros)">
+    <app-pros-cons-item
+      *ngFor="let pros of prosCons.pros; let i = index"
+      [data]="pros"
+      (delete)="deletePros(i)"
+      (edit)="editPros($event, i)"
+    ></app-pros-cons-item>
+  </div>
+  <div class="cons">
+    <input #cons (keyup.enter)="addNewCons(cons)">
+    <app-pros-cons-item
+      *ngFor="let cons of prosCons.cons; let i = index"
+      [data]="cons"
+      (delete)="deleteCons(i)"
+      (edit)="editCons($event, i)"
+    ></app-pros-cons-item>
+  </div>
+</div>-->
+
+
+<div class="jumbotron text-center">
+  <h1>Should I?...</h1>
+</div>
+
+<div class="container">
+  <div class="col-sx-1 col-sm-1"></div>
+  <div class="row col-sm-10 col-sx-10 pros-cons-container">
+    <div class="col-sx-6 col-sm-6 pros">
+      <div class="header text-center">
+        <h3>Pro's</h3>
+      </div>
+      <div class="body">
+        <div class="ul" *ngIf="prosCons">
+          <app-pros-cons-item
+            class="item"
+            *ngFor="let pros of prosCons.pros; let i = index"
+            [data]="pros"
+            (delete)="deletePros(i)"
+            (edit)="editPros($event, i)"
+          ></app-pros-cons-item>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="text">
+          <input
+            #pros
+            type="text"
+            class="form-control"
+            placeholder="New Pro's"
+            (keyup.enter)="addNewPros(pros)"
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-sx-6 col-sm-6 cons">
+      <div class="header text-center"><h3>Con's</h3></div>
+      <div class="body">
+        <div class="ul" *ngIf="prosCons">
+          <app-pros-cons-item
+            class="item"
+            *ngFor="let cons of prosCons.cons; let i = index"
+            [data]="cons"
+            (delete)="deleteCons(i)"
+            (edit)="editCons($event, i)"
+          ></app-pros-cons-item>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="text">
+          <input
+            #cons
+            type="text"
+            class="form-control"
+            placeholder="New Con's"
+            (keyup.enter)="addNewCons(cons)"
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
